@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Página inicial</title>
+    <meta name="description" content="">
+
+    <!-- endbuild -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico"/>
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.css"/>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/style-cookie.css"/>
+
+    <!-- local fonts -->
+    <link href="assets/css/open-sans.css" rel="stylesheet"/>
+    <link href="assets/css/merriweather.css" rel="stylesheet"/>
+
+    <!-- local styles-->
+    <link href="assets/css/index.css" rel="stylesheet"/>
+
+    <!-- rybena -->
+    <script src="https://cdn.tse.jus.br/estatico/js/rybena.js?positionPlayer=left&positionBar=right"></script>
+
+</head>
+
+<body>
+    <section id="header">
+        <div id="cabecalho_je">
+            <div class="container-fluid topo">
+                <!-- Carregado via JS - assets/js/geral.js -->
+            </div>
+            <div class="container menu">
+                <!-- Carregado via JS - assets/js/geral.js -->
+            </div>
+            <div class="collapse menu-vertical" id="collapseExample">
+                <div class="card card-body">
+                    <div class="container menu-interno">
+                        <!-- Carregado via JS - assets/js/geral.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="main-left" class="col-md-6 ">
+                    <div class="title">
+                        <div class="title-yellow">PARA NÃO ERRAR NA HORA DO VOTO,</div>
+                        <div class="title-white">LEVE A COLA.</div>
+                    </div>
+                    <img id="pen" src="assets/img/pen.svg">
+                    
+                </div>
+                
+                <div id="main-right" class="col-md-6">
+                    <div id="main-right-title">
+                        Na hora de votar, você vai escolher as candidaturas nessa ordem na urna eletrônica. Atenção aos campos para digitar os números de cada cargo eletivo!
+                    </div>
+                    
+                    <div id="list">
+                        <div class="list-elem">
+                            <div class="list-title">
+                                DEPUTADA OU DEPUTADO FEDERAL
+                            </div>
+                            <div class="list-squares">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                            </div>
+                        </div>
+                        <div class="list-elem">
+                            <div class="list-title">
+                                DEPUTADA OU DEPUTADO ESTADUAL OU DISTRITAL
+                            </div>
+                            <div class="list-squares" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                            </div>
+                        </div>
+                        <div class="list-elem">
+                            <div class="list-title">
+                                SENADORA OU SENADOR
+                            </div>
+                            <div class="list-squares" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                            </div>
+                        </div>
+                        <div class="list-elem">
+                            <div class="list-title">
+                                GOVERNADORA OU GOVERNADOR
+                            </div>
+                            <div class="list-squares" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                            </div>
+                        </div>
+                        <div class="list-elem">
+                            <div class="list-title">
+                                PRESIDENTE DA REPÚBLICA
+                            </div>
+                            <div class="list-squares">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                                <input class="square" maxlength="1" onClick="this.setSelectionRange(0, this.value.length)">
+                            </div>
+                        </div>
+                        <!-- <div class="list-elem"> -->
+                            <!-- <div class="list-title"> -->
+                                <div id="print" onclick="window.print();"><i class="fa fa-print"></i>Para imprimir sua cola, clique aqui.</div>
+                            <!-- </div>    -->
+                        <!-- </div> -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="footer-geral">
+        <!-- Carregado via JS - assets/js/geral.js -->
+    </section>
+
+    <div class="navegacao__setas">
+        <a target="_self" href="#top" data-toggle="tooltip" data-placement="top" title="" class="navegacao__setas_subir" data-original-title="Subir"><br />
+            <span class="" data-original-title="" title="">Subir</span>
+        </a>
+    </div>
+
+    <div class="cookies">
+        <div class="cookies__conteudo">
+            <div class="cookies__linha">
+                <div class="titulo">
+                    <h3>Política de privacidade </h3>
+                </div>
+                <div class="texto">
+                </div>
+                <div class="botao">
+                    <button class="btn">Aceito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Global JS-->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/geral.js"></script>
+    <!-- cookie -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc"></script>
+    <script src="assets/js/cookie.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16748902-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-16748902-1");
+    </script>
+    <!-- Local JS-->
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

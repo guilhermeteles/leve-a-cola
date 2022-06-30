@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'gothambold';
+    src: url('../fonts/gotham/gotham-bold-webfont.woff2') format('woff2'),
+         url('../fonts/gotham/gotham-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header {
+    border-bottom: 1px solid #ccc;
+}
+
+body {
+    background-color: #fcfcfc;
+    font-family: "gothambold";
+}
+
+.menu-vertical .card {
+    border-right: none;
+    border-left: none;
+    border-radius: 0 0 0.25em 0.25em;
+}
+
+#main {
+    min-height: calc(100vh - 100px - 139.13px);
+}
+
+#main-left {
+    min-height: calc(100vh - 100px - 139.13px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#main-right {
+    min-height: calc(100vh - 100px - 139.13px);
+    width: 100%;
+}
+
+#pen {
+    position: absolute;
+    z-index: 1;
+    width: 8rem;
+    right: -3rem;
+}
+
+.col-md-6 {
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    flex-flow: column;
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 4rem;
+    background-color: #59358c;
+    border-radius: 1rem;
+    margin-left: 25%;
+}
+
+.title-yellow {
+    color: #f7a706;
+}
+
+.title-white {
+    color: #fff;
+}
+
+#main-right-title {
+    padding: 3rem 2rem 2rem 2rem;
+    margin: 0 25% 0 10%;
+    text-align: center;
+    background-color: #e94d5f;
+    color: #fff;
+    border-radius: 0 0 1rem 1rem;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+}
+
+#list {
+    text-align: center;
+    margin: 20px 25% 0 10%;
+    background-color: #59358c;
+    border-radius: 1rem 1rem 0 0;
+    padding: 2rem 2rem 3rem 2rem;
+}
+
+.list-title {
+    color: #f7a706;
+    margin: 25px 0 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-align: center;
+    outline-color: #e94d5f;
+}
+#print {
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+#print i{
+    margin-right: 0.9rem;
+}
+
+#print:hover {
+    text-decoration: underline;
+}
+
+@media print {
+    #header,#main-left,#footer-geral,#main-right-title,#print {
+        display: none;
+    }
+
+    #main-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .list-title {
+        color: #ccc;
+    }
+    
+    .square {
+        border: solid 1px #ddd;
+    }
+}
+
+@media (max-width: 1300px) {
+    .title {
+        margin-left: 20%;
+    }
+
+    #main-left {
+        min-height: 0!important;
+        margin-top: 1.5rem;
+        align-items: flex-start;
+    }
+
+    #main-right-title {
+        padding: 3rem 2rem 2rem 2rem;
+        margin: 0 1rem;
+    }
+    
+    #list {
+        margin: 20px 1rem 0 20px;
+        padding: 2rem 2rem 3rem 2rem;
+    }
+}
+@media (max-width: 1150px) {
+    .title {
+        margin-left: 10%;
+    }
+}
+@media (max-width: 1020px) {
+    .title {
+        margin-left: 5%;
+        padding: 3rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        padding: 3rem;
+    }
+    #pen {
+        position: absolute;
+        z-index: 1;
+        width: 6rem;
+        right: -3rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .title{
+        margin: 0 1rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+    #main-left {
+        min-height: calc((100vh - 100px - 139.13px)/2);
+    }
+    
+    #main-right {
+        min-height: calc((100vh - 100px - 139.13px)/2);
+    }
+    #pen {
+        position: absolute;
+        z-index: 1;
+        width: 4rem;
+        right: 0.3rem;
+        margin-top: -1rem;
+    }
+    
+    #print {
+        display: none;
+    }
+}
